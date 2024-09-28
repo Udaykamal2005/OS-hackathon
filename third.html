@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU Scheduling Simulator</title>
+    <link rel="stylesheet" href="third.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CPU Scheduling Simulator</h1>
+
+        <!-- Input Form for Processes -->
+        <div class="input-form">
+            <h2>Enter Process Details</h2>
+            <div id="process-inputs">
+                <div class="process">
+                    <label>Process ID: <input type="text" class="process-id" value="P1" disabled></label>
+                    <label>Arrival Time: <input type="number" class="arrival-time" min="0"></label>
+                    <label>Burst Time: <input type="number" class="burst-time" min="1"></label>
+                </div>
+            </div>
+            <button id="add-process">Add Another Process</button>
+            <button id="simulate">Simulate FCFS</button>
+        </div>
+
+        <!-- Gantt Chart Display -->
+        <h2>Gantt Chart</h2>
+        <canvas id="gantt-chart"></canvas>
+
+        <!-- Results Table -->
+        <h2>Process Results</h2>
+        <table id="results-table">
+            <thead>
+                <tr>
+                    <th>Process ID</th>
+                    <th>Waiting Time</th>
+                    <th>Turnaround Time</th>
+                    <th>Response Time</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div class="footer">
+        The team consisting of <b>Akash</b>, <b>Udaykamal</b>, <b>Vishwak</b>, <b>Koushik</b>, and <b>Ganesh</b> has successfully implemented input
+        handling for the First-Come, First-Served (FCFS) scheduling algorithm, calculating waiting time, turnaround
+        time, and response time efficiently. This achievement marks a significant step forward in the development of our
+        CPU Scheduling Simulator.
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="third.js"></script>
+</body>
+
+</html>
